@@ -8,9 +8,9 @@ services:
     ports:
       - 8111:80
     depends_on:
-      - mysql_db
+      - ujianmcca
   
-  mysql_db:
+  ujianmcca:
     image: mysql:latest
     command: --default-authentication-plugin=mysql_native_password
     restart: always
@@ -30,4 +30,4 @@ services:
     environment:
       - PMA_ARBITRARY=1
     depends_on:
-      - mysql_db
+      - ujianmcca
