@@ -4,7 +4,7 @@ services:
   php-env:
     build: ./portfolio
     volumes:
-      - .portfolio:/var/www/html
+      - ./portfolio:/var/www/html
     ports:
       - 8111:80
     depends_on:
@@ -16,8 +16,8 @@ services:
     restart: always
     environment:
       MYSQL_DATABASE: personal_porfolio
-      MYSQL_USER: user
-      MYSQL_PASSWORD: root
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 
       MYSQL_ROOT_PASSWORD: root
     volumes:
       - ./portfolio:/docker-entrypoint-initdb.d
@@ -30,4 +30,4 @@ services:
     environment:
       - PMA_ARBITRARY=1
     depends_on:
-      - db_mysql
+      - mysql_db
