@@ -7,13 +7,20 @@ services:
       - .portfolio:/var/www/html
     ports:
       - 8111:80
+    depends_on:
+      - mysql_db
   
   mysql_db:
     image: mysql:latest
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
+      MYSQL_DATABASE: personal_porfolio
+      MYSQL_USER: user
+      MYSQL_PASSWORD: root
       MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - ./portfolio:/docker-entrypoint-initdb.d
 
   phpmyadmin:
     image: phpmyadmin:latest
@@ -22,3 +29,5 @@ services:
       - 8112:80
     environment:
       - PMA_ARBITRARY=1
+    depends_on:
+      - db_mysql

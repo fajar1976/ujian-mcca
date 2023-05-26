@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 19, 2020 at 04:24 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.2
+-- Generation Time: May 26, 2023 at 10:45 AM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -38,14 +37,14 @@ CREATE TABLE `about_me` (
   `linkedin_link` varchar(100) NOT NULL,
   `github_link` varchar(100) NOT NULL,
   `photo` varchar(120) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `about_me`
 --
 
 INSERT INTO `about_me` (`id`, `name`, `intro`, `details`, `fb_link`, `twitter_link`, `linkedin_link`, `github_link`, `photo`) VALUES
-(1, 'Ali Azgar Rakib', 'I am Rakib . I am a Web Developer . I know HTML, CSS, Bootstrap, jQuery,Php and Laravel.', 'I am a hardworking and ambitious individual with a great passion for computer programming. I am currently in my eighth semester (industrial training) of studying Diploma in Computer Engineering at Munshiganj Polytechnic Institute. I am good at programming. I have a good knowledge about HTML, CSS, Bootstrap  PHP, MySQL. Give me the opportunity to spend my skills on the welfare of your company', 'https://www.facebook.com/crrakib55', 'https://twitter.com/crrakib5', 'https://www.linkedin.com/in/rakib5/', 'https://github.com/crrakib5', '1.png');
+(1, 'Fajar Pahmi Padilah', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ', 'https://www.facebook.com/crrakib55', 'https://twitter.com/fajar.pahmi.1/', 'https://www.linkedin.com/in/fajar-pahmi-padilah-092300220/', 'https://github.com/pahmipadilah76', 'default.png');
 
 -- --------------------------------------------------------
 
@@ -60,14 +59,14 @@ CREATE TABLE `contact_information` (
   `address` varchar(200) NOT NULL,
   `phone` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `contact_information`
 --
 
 INSERT INTO `contact_information` (`id`, `small_text`, `office`, `address`, `phone`, `email`) VALUES
-(1, 'We are always here for you. Fell free to Contact.', 'Shohagpur.', 'Shohagpur,Kapasia,Gazipur', '+8801628651490', 'crrakib5@gmail.com');
+(1, 'tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac', 'Sleman', 'Sleman City', '+628000000001', 'pahmipadilah76@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -80,15 +79,15 @@ CREATE TABLE `education_informations` (
   `degree_name` varchar(100) NOT NULL,
   `year` int(5) NOT NULL,
   `progressbar` int(3) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `education_informations`
 --
 
 INSERT INTO `education_informations` (`id`, `degree_name`, `year`, `progressbar`) VALUES
-(3, 'Diploma In Engineering', 2020, 80),
-(4, 'S.S.C', 2016, 70);
+(3, 'Diploma In Engineering', 2021, 80),
+(4, 'S.S.C', 2022, 70);
 
 -- --------------------------------------------------------
 
@@ -102,7 +101,7 @@ CREATE TABLE `guest_messages` (
   `email` varchar(80) NOT NULL,
   `message` text NOT NULL,
   `status` int(11) NOT NULL DEFAULT 1
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `guest_messages`
@@ -126,7 +125,7 @@ INSERT INTO `guest_messages` (`id`, `name`, `email`, `message`, `status`) VALUES
 CREATE TABLE `logo` (
   `id` int(3) NOT NULL,
   `photo` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `logo`
@@ -151,7 +150,7 @@ CREATE TABLE `my_best_works` (
   `works_name` varchar(100) NOT NULL,
   `catagory` varchar(100) NOT NULL,
   `photo` varchar(110) NOT NULL DEFAULT 'default.jpg'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `my_best_works`
@@ -176,7 +175,7 @@ CREATE TABLE `services` (
   `icon` varchar(100) NOT NULL,
   `title` varchar(100) NOT NULL,
   `some_text` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `services`
@@ -199,14 +198,14 @@ CREATE TABLE `stastistics` (
   `active_products` int(11) NOT NULL,
   `experience` int(11) NOT NULL,
   `clients` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `stastistics`
 --
 
 INSERT INTO `stastistics` (`id`, `feature_item`, `active_products`, `experience`, `clients`) VALUES
-(1, 540, 560, 58, 1000);
+(1, 999, 999, 999, 999);
 
 -- --------------------------------------------------------
 
@@ -220,7 +219,7 @@ CREATE TABLE `testimonials` (
   `customer_desegnation` varchar(100) NOT NULL,
   `customer_comment` text NOT NULL,
   `photo` varchar(100) NOT NULL DEFAULT 'default.png'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `testimonials`
@@ -244,16 +243,14 @@ CREATE TABLE `users` (
   `password` varchar(255) NOT NULL,
   `status` int(1) NOT NULL DEFAULT 1,
   `photo` varchar(100) NOT NULL DEFAULT 'default.png'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `fname`, `email`, `password`, `status`, `photo`) VALUES
-(1, 'Rakib', 'rakib@gmail.com', '$2y$10$Zp2gDrCQHUqca19wDY5fC.5CTJKycjnFsqUMDw8yGHe4zqFKvtvEe', 2, '1.jpg'),
-(2, 'Rakib', 'rakib1@gmail.com', '$2y$10$n7Q8pVBaawk42PDWW/9pheLKjxJ9UYoNP2Zb420.U1wHqLXDw3OSi', 2, 'default.png'),
-(3, 'Rakib', 'rakib2@gmail.com', '$2y$10$iEwGLYZ/kZd6pp97NaL7YeKIqrMCg59t9GYyttBQPcaciYk5eZLiu', 2, '3.png');
+(5, 'Fajar Pahmi Padilah', 'pahmipadilah76@gmail.com', '$2y$10$9b5MAPBXMW0ngOgpdleUq.icojHoR0tcYdeskLnqZ78ZDmalNCefO', 2, '5.png');
 
 --
 -- Indexes for dumped tables
@@ -381,7 +378,7 @@ ALTER TABLE `testimonials`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
