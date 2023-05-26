@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   php-env:
-    build: .
+    build: ./portfolio
     volumes:
       - .portfolio:/var/www/html
     ports:
