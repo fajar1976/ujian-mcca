@@ -16,7 +16,7 @@ services:
     restart: always
     environment:
       MYSQL_DATABASE: personal_portfolio
-      MYSQL_USER: root
+      MYSQL_USER: user
       MYSQL_PASSWORD: root
       MYSQL_ROOT_PASSWORD: root
     volumes:
