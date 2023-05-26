@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   php-env:
-    build: ./portfolio
+    build: .
     volumes:
       - ./portfolio:/var/www/html
     ports:
@@ -18,7 +18,7 @@ services:
       MYSQL_DATABASE: personal_portfolio
       MYSQL_USER: admin
       MYSQL_PASSWORD: root
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: ujianmcca
     volumes:
       - ./portfolio:/docker-entrypoint-initdb.d
 
