@@ -1,6 +1,6 @@
 <?php 
 
-const DB_HOST = '4.194.83.136';
+const DB_HOST = 'ujianmcca';
 const DB_USER = 'admin';
 const DB_PASSWORD = 'root';
 const DB_NAME     = 'personal_portfolio';
