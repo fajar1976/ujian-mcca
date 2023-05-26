@@ -17,8 +17,8 @@ services:
     environment:
       MYSQL_DATABASE: personal_portfolio
       MYSQL_USER: admin
-      MYSQL_PASSWORD: ujianmcca
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: ujianmcca
     volumes:
       - ./portfolio:/docker-entrypoint-initdb.d
 
