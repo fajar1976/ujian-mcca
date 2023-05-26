@@ -14,7 +14,7 @@ $services_query = $dbcon->query("SELECT * FROM services");
 
 
 	<div class="card text-dark mb-3" >
-	  <div class="card-header bg-success text-center "><?=Services?></div>
+	  <div class="card-header bg-success text-center " style="font-size: 25px;">Services</div>
 	  <div class="card-body">
 
 

@@ -274,6 +274,7 @@ label {
 }
 .main-menu .navbar {
 	padding: 0;
+	
 }
 .main-menu .nav-item {
 	display: inline-block;
@@ -290,10 +291,12 @@ label {
 }
 .header-search {
 	margin-left: 35px;
+	
 }
 .main-menu .navbar-expand-lg .navbar-nav .nav-link,
 .header-search a {
 	color: #ebebeb;
+
 }
 .header-btn .btn {
 	font-size: 14px;

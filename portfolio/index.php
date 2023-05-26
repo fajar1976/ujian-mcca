@@ -10,7 +10,7 @@ require_once "admin/db.php";
 <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Portpolio Pers</title>
+        <title>PORTOFOLIO</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -64,7 +64,7 @@ require_once "admin/db.php";
                                             <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
                                             <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
                                             <li class="nav-item"><a class="nav-link" href="#service">Layanan</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="#portfolio">Portofolio</a></li>
                                             <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
                                         </ul>
                                     </div>
@@ -162,7 +162,7 @@ require_once "admin/db.php";
                                         <li><a href="<?=$about_me['github_link']?>"><i class="fab fa-github"></i></a></li>
                                     </ul>
                                 </div>
-                                <a href="#" class="btn wow fadeInUp" data-wow-delay="1s">SEE PORTFOLIOS</a>
+                                <a href="#" class="btn wow fadeInUp" data-wow-delay="1s">LIHAT PORTOFOLIO</a>
                             </div>
                         </div>
                         <div class="col-xl-5 col-lg-6 d-none d-lg-block">
@@ -188,11 +188,11 @@ require_once "admin/db.php";
                         <div class="col-lg-6 pr-90">
                             <div class="section-title mb-25">
                                 <span>Introduction</span>
-                                <h2>About Me</h2>
+                                <h2>TENTANG SAYA</h2>
                             </div>
                             <div class="about-content">
                                 <p><?=$about_me['details']?></p>
-                                <h3>Education:</h3>
+                                <h3>PENDIDIKAN:</h3>
                             </div>
 
                           
@@ -250,8 +250,8 @@ require_once "admin/db.php";
                     <div class="row justify-content-center">
                         <div class="col-xl-6 col-lg-8">
                             <div class="section-title text-center mb-70">
-                                <span>WHAT WE DO</span>
-                                <h2>Services and Solutions</h2>
+                                <span>APA YANG BISA SAYA LAKUKAN</span>
+                                <h2>LAYANAN DAN KONSULTAN</h2>
                             </div>
                         </div>
                     </div>
@@ -287,7 +287,7 @@ require_once "admin/db.php";
                         <div class="col-xl-6 col-lg-8">
                             <div class="section-title text-center mb-70">
                                 <span>Portfolio Showcase</span>
-                                <h2>My Recent Best Works</h2>
+                                <h2>PENGALAMAN TERAKHIR SAYA</h2>
                             </div>
                         </div>
                     </div>
@@ -401,7 +401,7 @@ require_once "admin/db.php";
                         <div class="col-xl-6 col-lg-8">
                             <div class="section-title text-center mb-70">
                                 <span>testimonial</span>
-                                <h2>happy customer quotes</h2>
+                                <h2>happy customer no comment</h2>
                             </div>
                         </div>
                     </div>
@@ -437,12 +437,12 @@ require_once "admin/db.php";
             <!-- testimonial-area-end -->
 
             <!-- brand-area -->
-            <div class="barnd-area pt-100 pb-100">
+            <!-- <div class="barnd-area pt-100 pb-100">
                 <div class="container">
-                    <div class="row brand-active">
+                    <div class="row brand-active"> -->
                         
                       <!-- php code for add logo -->
-                      <?php 
+                      <!-- <?php 
                       $logo_query = $dbcon->query("SELECT * FROM logo ORDER BY id DESC");
                       if($logo_query->num_rows>= 6){
                       foreach ($logo_query as $logo) {
@@ -465,7 +465,7 @@ require_once "admin/db.php";
                         
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- brand-area-end -->
 
             <!-- contact-area -->
@@ -528,9 +528,9 @@ require_once "admin/db.php";
 
                                   <!-- end alert -->
 
-                                    <input type="text" placeholder="your name *" name='guest_name'>
-                                    <input type="email" placeholder="your email *" name='guest_email'>
-                                    <textarea name="guest_message" id="message" placeholder="your message *"></textarea>
+                                    <input type="text" placeholder="Nama *" name='guest_name'>
+                                    <input type="email" placeholder="Email *" name='guest_email'>
+                                    <textarea name="guest_message" id="message" placeholder="Pesan Anda *"></textarea>
                                     <button class="btn">SEND</button>
                                 </form>
                             </div>
@@ -550,7 +550,7 @@ require_once "admin/db.php";
                     <div class="row align-items-center">
                         <div class="col-12">
                             <div class="copyright-text text-center">
-                                <p>Copyright© <span>Ali Azgar Rakib</span> | All Rights Reserved</p>
+                                <p>Copyright© <span>2023</span> | All Rights Reserved</p>
                             </div>
                         </div>
                     </div>
